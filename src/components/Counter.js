@@ -1,11 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { increment } from './actions/increment';
-import { decrement } from './actions/decrement';
+import { decrement, increment } from '../actions';
 
 function Counter(props) {
-  console.log(props);
   return (
     <div>
       <h1>{props.value.value}</h1>
